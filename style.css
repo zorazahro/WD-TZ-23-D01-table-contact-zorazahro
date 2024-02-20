@@ -1,0 +1,39 @@
+table,
+th,
+td {
+  border: 1px solid rgb(204, 200, 202);
+}
+
+table {
+  width: 600px;
+  /* Abstand zwischen den Zellen. Wird ignoriert bei border-collapse: collapse; */
+  border-spacing: 0.5rem;
+  /* Um die Border zusammenziehen zu lassen */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* Abstand zwischen Inhalt und Tabellenborder */
+  padding: 0.3rem;
+}
+
+
+thead {
+  position: sticky;
+  top: 0;
+ 
+}
+
+
+tbody > tr:nth-child(odd) {
+/* tbody > tr:nth-child(2n+1) { */
+  background-color: rgb(204, 200, 202);
+}
+.amount{
+  text-align: right;
+}
+td:nth-child(3), td:last-child{
+  text-align: right;
+}
+
